@@ -11,7 +11,7 @@ class Student
     #below is a HEREDOC
     sql = <<-SQL
     CREATE TABLE IF NOT EXISTS students (
-      id PRIMARY KEY,
+      id INTEGER PRIMARY KEY,
       name TEXT,
       grade TEXT
       )
