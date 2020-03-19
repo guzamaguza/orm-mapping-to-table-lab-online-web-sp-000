@@ -8,6 +8,7 @@ class Student
   end
 
   def self.create_table
+    #below is a HEREDOC
     sql = <<-SQL
     CREATE TABLE IF NOT EXISTS students (
       id PRIMARY KEY,
