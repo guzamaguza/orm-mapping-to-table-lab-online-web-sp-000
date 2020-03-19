@@ -43,7 +43,7 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade)
 
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
-    #use a SQL query to grab the value of the ID column of the last inserted row, 
+    #use a SQL query to grab the value of the ID column of the last inserted row,
     #and set that equal to the given song instance's id attribute
   end
 
