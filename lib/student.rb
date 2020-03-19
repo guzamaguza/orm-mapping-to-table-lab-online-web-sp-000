@@ -49,7 +49,7 @@ class Student
     #and set that equal to the given song instance's id attribute
   end
 
-  def self.create(name:, grade:)
+  def self.create(name, grade)
       student = Student.new(name, grade)
       student.save
       student
